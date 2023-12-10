@@ -305,7 +305,7 @@
               </a>
             </div>
           </div>
-          <img src="./img/myimg.jpg" alt="my image" class="about__image">
+          <img src="" alt="my image" class="about__image" id="myImg">
           <!-- <img src="./img/profile-noback.png" onmouseover="imageChange()" onmouseout="imageChange()" alt="" id="myImg" class="about__image" /> -->
           <!-- <img src="./img/mainprofilfephoto.png" alt="" class="about__image" /> -->
         </div>
@@ -485,7 +485,7 @@
             <div class="core-skills core-skills--project">
               <div class="core-skills-item core-skills-item--row light-shadow">
                 <div class="core-skills-item--image--row">
-                  <img class="core-skills-item--image-img" src="./img/projects/Eskoops.png" alt="Image">
+                  <img class="core-skills-item--image-img" src="" alt="Image" id="eskoopsImg">
                 </div>
                 <div class="core-skills-item--content">
                   <h2 class="core-skills-item-title">Eskoops</h2>
@@ -553,7 +553,7 @@
             <div class="core-skills core-skills--project">
               <div class="core-skills-item core-skills-item--row light-shadow">
                 <div class="core-skills-item--image--row">
-                  <img class="core-skills-item--image-img" src="./img/projects/ThethoughtBulb.png" alt="Image">
+                  <img class="core-skills-item--image-img" src="" alt="Image" id="ttbImg">
                 </div>
                 <div class="core-skills-item--content">
                   <h2 class="core-skills-item-title">TheThoughtbulb</h2>
@@ -620,7 +620,7 @@
             <div class="core-skills core-skills--project">
               <div class="core-skills-item core-skills-item--row light-shadow">
                 <div class="core-skills-item--image--row">
-                  <img class="core-skills-item--image-img" src="./img/projects/Sigowill.png" alt="Image">
+                  <img class="core-skills-item--image-img" src="" alt="Image" id="sigowillImg">
                 </div>
                 <div class="core-skills-item--content">
                   <h2 class="core-skills-item-title">Sigowill</h2>
@@ -796,11 +796,12 @@
     src="https://cdn.jsdelivr.net/npm/darkreader/darkreader.min.js"
     crossorigin="anonymous"
   ></script>
-  <!-- <script type="text/javascript">
-        DarkReader.enable({
-            brightness: 100,
-            contrast: 90,
-            sepia: 10
-        });
-    </script> -->
+  <script>
+    document.addEventListener("DOMContentLoaded" , () =>{
+      document.getElementById("myImg").src = "./img/myimg.JPG";
+      document.getElementById("eskoopsImg").src = "./img/projects/Eskoops.png";
+      document.getElementById("ttbImg").src = "./img/projects/ThethoughtBulb.png";
+      document.getElementById("sigowillImg").src = "./img/projects/Sigowill.png";
+    })
+  </script>
 </html>
